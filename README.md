@@ -2,6 +2,8 @@
 
 TweetCraft is a Python script designed to automate the process of creating and posting enriched tweets. It leverages the OpenAI API to summarize web content and generate related images, then posts these summaries along with the images to Twitter, enhancing user engagement with visually appealing, informative tweets.
 
+TweetCraft is based on Kesha Williams' "Building a Project with the ChatGPT API" LinkedIn Learning course - [check out that repository here](https://github.com/LinkedInLearning/building-a-project-with-the-chatgpt-api-4484140).
+
 ## Features
 
 - **Content Summarization**: Utilizes OpenAI's GPT model to generate concise summaries of web content.
