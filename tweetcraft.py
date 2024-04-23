@@ -114,14 +114,21 @@ def download_image(imageURL):
 
 image_name = download_image(url)
 
-
-# Authenticate to Twitter API **NOT SECURE!** 
+"""
+# Authenticate to Twitter API **NOT SECURE! ONLY USE IF OS.GETENV DOESN'T WORK!** 
 consumer_key = "your-twitter-consumer-key"
 consumer_secret = "your-twitter-consumer-secret"
 access_token = "your-twitter-access-token"
 access_token_secret = "your-twitter-access-token-secret"
+"""
 
+# Authenticate to Twitter API **USE THIS INSTEAD***
+consumer_key = os.getenv("API_KEY")
+consumer_secret = os.getenv("API_SECRET_KEY")
+access_token = os.getenv("ACCESS_TOKEN")   
+access_token_secret = os.getenv("ACCESS_TOKEN_SECRET_KEY") 
 
+# Combine the original Tweet (summary) and the URL (initial_url) to get the full text for the Tweet
 combined = f"{summary} {initial_url}"
 
 
